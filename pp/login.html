@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Vote System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-image:url("zsh.jpg");
+            background-size: cover;
+    
+        }
+        .login-card {
+            max-width: 400px;
+            border: none;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body class="d-flex align-items-center justify-content-center min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success position-absolute top-0 end-0 m-3 rounded-3 shadow">
+    <div class="container-fluid">
+
+     
+        <a class="navbar-brand fw-bold" href="index.html">
+            <i class="bi bi-box"></i> ZSH Voting System
+        </a>
+
+        
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+       
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav">
+
+
+
+                <li class="nav-item">
+                    <a class="nav-link active fw-bold" href="">
+                        <i class="bi bi-person-fill"></i> Student
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="adminlogin.html">
+                        <i class="bi bi-person-gear"></i> Admin
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4">
+            <div class="card login-card shadow-lg p-4">
+                <div class="card-body">
+                    
+                    <div class="text-center mb-4">
+                        <div class="bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-2" style="width: 60px; height: 60px;">
+                            <i class="bi bi-box-arrow-in-right fs-2"></i>
+                        </div>
+                        <h3>Welcome</h3>
+                        <p> Student Voting System</p>
+                    </div>
+
+                    
+                    <form action="loginprocesscode.php" method="POST">
+                
+                        <div class="mb-3">
+                            <label for="username" class="form-label font-weight-bold">Username</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-light text-muted">
+                                    <i class="bi bi-person-fill"></i>
+                                </span>
+                                <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    id="username" 
+                                    name="username" 
+                                    placeholder="Enter your username" 
+                                    required
+                                >
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="password" class="form-label">Password</label>
+                            <div class="input-group">
+                                <span class="input-group-text bg-light text-muted">
+                                    <i class="bi bi-lock-fill"></i>
+                                </span>
+                                <input 
+                                    type="password" 
+                                    class="form-control" 
+                                    id="password" 
+                                    name="password" 
+                                    placeholder="Enter your password" 
+                                    required
+                                >
+                            </div>
+                        </div>
+
+                        
+                        <button type="submit" class="btn btn-success w-100 py-2 fw-bold shadow-sm">
+                            <i class="bi bi-box-arrow-in-right me-1"></i> Log In
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/bootstrap.bundle.min.js"></script>
+</body>
+</html>
